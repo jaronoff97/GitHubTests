@@ -2,14 +2,11 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
-public class GridWorld extends Applet implements Runnable, MouseListener, KeyListener, MouseMotionListener
+public class GitHubApplet extends Applet implements Runnable, MouseListener, KeyListener, MouseMotionListener
 {
    public int worldx;
    public int worldy;
-   public ArrayList<Integer> unSorted;
-   public ArrayList<Integer> sorted;
    
-  
    Graphics bufferGraphics; //Set up double buffer
    Image offscreen;
    Thread thread;//Sets up a Thread called thread
@@ -19,13 +16,6 @@ public class GridWorld extends Applet implements Runnable, MouseListener, KeyLis
       worldx=1400;//Sets the world size
       worldy=1000;//Sets the world size
 
-      unSorted = new ArrayList<Integer>();
-      sorted = new ArrayList<Integer>();
-      for(int x=0;x<10;x++)
-      {
-         sorted.add(((int)(Math.random()*100)));
-      }
-     
       offscreen = createImage(worldx,worldy); //create a new image that's the size of the applet DOUBLE BUFFER SET UP
       bufferGraphics = offscreen.getGraphics(); //set bufferGraphics to the graphics of the offscreen image. DOUBLE BUFFER SET UP
    
