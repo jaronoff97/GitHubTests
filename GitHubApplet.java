@@ -7,6 +7,7 @@ public class GitHubApplet extends Applet implements Runnable, MouseListener, Key
 {
    public int worldx;
    public int worldy;
+   public String testString;
    
    Graphics bufferGraphics; //Set up double buffer
    Image offscreen;
