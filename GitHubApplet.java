@@ -2,6 +2,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+
 public class GitHubApplet extends Applet implements Runnable, MouseListener, KeyListener, MouseMotionListener
 {
    public int worldx;
