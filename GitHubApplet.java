@@ -8,6 +8,7 @@ public class GitHubApplet extends Applet implements Runnable, MouseListener, Key
 	//Comment
    public int worldx;
    public int worldy;
+   public int newInteger=0;
    public String testString;
    public int testInt;
    
