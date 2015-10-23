@@ -5,6 +5,7 @@ import java.util.*;
 
 public class GitHubApplet extends Applet implements Runnable, MouseListener, KeyListener, MouseMotionListener
 {
+	//Comment
    public int worldx;
    public int worldy;
    public String testString;
